@@ -1,0 +1,8 @@
+defaults:
+    - _base
+    - _self_
+
+name: 'CNN_Linear'
+rep_dim: 512
+learning:
+    lr: 1e-4

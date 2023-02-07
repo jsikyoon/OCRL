@@ -1,0 +1,9 @@
+defaults:
+  - _synthetic_env_base
+  - _self_
+name: TargetN4C4S3S1
+dataset_checkpoint:
+    entity: ''
+    project: ''
+    run_id: ''
+    file: 'TargetEnv-N4-4C4S3S1-hardMode-UseBGFalse-AgentPos0505-WoAgentFalse-OcclusionFalse-SkewedFalse-Seed0-Tr50000-Val10000.hdf5'

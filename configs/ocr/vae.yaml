@@ -1,0 +1,7 @@
+name: VAE
+latent_dim: 256
+use_cnn_feat: False
+cnn_feat_size: 4
+learning:
+    lr: 1e-4
+    kld_weight: 0.0001

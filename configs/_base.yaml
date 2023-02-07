@@ -1,0 +1,14 @@
+batch_size: 32
+num_visualization: 5
+device: 'cpu'
+tags: ""
+seed: 0
+
+num_envs: 4
+num_workers: 1
+
+load:
+    resume_run_path: null
+    resume_checkpoint: null
+
+max_epochs: 1000

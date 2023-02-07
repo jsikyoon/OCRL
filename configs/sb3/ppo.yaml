@@ -1,0 +1,10 @@
+name: 'PPO'
+algo_kwargs:
+    n_steps: 2048
+    batch_size: 32
+    learning_rate: 3e-4
+    ent_coef: 0.0
+    gamma: 0.99
+    vf_coef: 0.5
+    target_kl: null
+    clip_range: 0.2

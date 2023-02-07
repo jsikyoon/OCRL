@@ -1,0 +1,6 @@
+name: NatureCNN
+rep_dim: 512
+use_cnn_feat: False
+cnn_feat_size: 4
+learning:
+    lr: 1e-4

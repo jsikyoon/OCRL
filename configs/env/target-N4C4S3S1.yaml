@@ -1,0 +1,9 @@
+defaults:
+    - _synthetic_env_base
+    - _self_
+name: TargetN4C4S3S1Env
+env: TargetEnv
+target: ['blue', 'square', 0.15]
+COLORS: ['blue', 'green', 'yellow', 'red']
+SHAPES: ['square', 'triangle', 'star_4']
+SCALES: [0.15]

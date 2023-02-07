@@ -1,0 +1,9 @@
+learn_aux_loss: False
+learn_downstream_loss: False
+ocr_checkpoint:
+  entity: ''
+  project: ''
+  run_id: ''
+  file: ''
+  local_file: ''
+  finetuning: False

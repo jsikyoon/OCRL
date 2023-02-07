@@ -1,0 +1,5 @@
+name: MultipleCNN
+num_modules: 5
+rep_dim: 512
+learning:
+    lr: 1e-4

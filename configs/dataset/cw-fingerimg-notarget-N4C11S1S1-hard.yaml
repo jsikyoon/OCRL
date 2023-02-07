@@ -1,0 +1,5 @@
+name: CwFingerImgNoTarget-N4C11S1S1-hard
+num_objs: 4
+obs_size: 64
+obs_channels: 3
+datadir: /research/projects/object_centric/yifuwu2/js_ocrl/code/OCRL/envs/outputs/2022-09-21/18-11-41/CwTargetEnv-N4C11S1S1-Tr1000000-Val10000.hdf5

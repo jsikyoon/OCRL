@@ -1,0 +1,10 @@
+defaults:
+    - _base
+    - _self_
+
+name: 'MLP'
+dims: [128, 128]
+acts: ['relu', 'relu']
+rep_dim: 128
+learning:
+    lr: 1e-4

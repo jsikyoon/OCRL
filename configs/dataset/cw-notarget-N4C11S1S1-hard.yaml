@@ -1,0 +1,7 @@
+name: CwNoTarget-N4C11S1S1-hard
+tags: ""
+num_objs: 4
+obs_size: 64
+obs_channels: 3
+datadir: /research/projects/object_centric/yifuwu2/js_ocrl/code/OCRL/envs/outputs/2022-09-09/17-05-23/CwTargetEnv-N4C11S1S1-Tr1000000-Val10000.hdf5
+

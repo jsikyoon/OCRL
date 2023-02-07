@@ -1,0 +1,31 @@
+num_objects_range: [4,4]
+state_size: 5
+mode: 'hard'
+rew_type: 'sparse'
+distance_to_agent: 0.08
+distance_to_objs: 0.08
+distance_to_wall: 0.08
+num_stacked_obss: 1
+tags: ""
+obs_size: 64
+obs_channels: 3
+moving_step_size: 0.05
+wo_agent: False
+skewed: False
+occlusion: False
+render_mode: "image"
+max_steps: 100
+agent_pos: [0.5,0.5]
+SHAPES: ['square', 'triangle']
+COLORS: ['blue', 'green', 'yellow']
+SCALES: [0.15]
+AGENT: ['red', 'circle', 0.15] # color, shape, scale
+background:
+  use_bg: False
+  img_paths: [
+    '../dtd/images/braided',
+    '../dtd/images/stratified',
+  ]
+unseen_combi_mode: null
+unseen_combi: []
+obj_comp: False

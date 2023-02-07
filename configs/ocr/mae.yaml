@@ -1,0 +1,9 @@
+name: MAE
+vit_size: 'base'
+patch_size: 8
+return_cls: False
+masking_ratio: 0.75
+
+learning:
+    lr: 1e-3
+    weight_decay: 0.05

@@ -1,0 +1,28 @@
+defaults:
+  - _base
+  - _self_
+  - ocr: ???
+  - pooling: ???
+  - sb3: ???
+  - sb3_acnet: ???
+  - sb3_intrew: wo_intrew
+  - env: ???
+  - wandb: train_sb3
+
+max_steps: 2e6
+
+model_name: null
+session_name: null
+num_envs: 4
+video:
+  interval: 5000
+  length: 1000
+
+viz_interval: 30000
+eval:
+    freq: 1000
+    n_episodes: 100
+
+hydra:
+  run:
+    dir: ./outputs/train_sb3/${ocr.name}-${pooling.name}-${sb3.name}-${env.name}/hydra/${now:%Y-%m-%d_%H-%M-%S}

@@ -1,0 +1,9 @@
+defaults:
+    - _synthetic_env_base
+    - _self_
+env: OddOneOutEnv
+name: OddOneOutN7C3S1S1Env
+num_objects_range: [7,7]
+COLORS: ['blue', 'green', 'yellow']
+SHAPES: ['square']
+SCALES: [0.15]

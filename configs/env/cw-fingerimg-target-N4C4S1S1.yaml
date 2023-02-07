@@ -1,0 +1,11 @@
+defaults:
+    - _cw_env_base
+    - _self_
+name: CwFingerImgTargetN4C4S1S1Env
+env: CwTargetEnv
+
+target: ['blue']
+COLORS: ['blue', 'green', 'yellow', 'red']
+
+render_mode: 'finger_image'
+num_stacked_obss: 3

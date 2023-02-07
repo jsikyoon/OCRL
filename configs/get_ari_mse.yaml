@@ -1,0 +1,19 @@
+defaults:
+  - _base
+  - _self_
+  - ocr: ???
+  - dataset: ???
+  - wandb: get_ari_mse
+
+batch_size: 32
+bg_mask_idx: -1
+ocr_checkpoint:
+  entity: ''
+  project: ''
+  run_id: ''
+  file: ''
+  local_file: ''
+
+hydra:
+  run:
+    dir: ./outputs/get_ari/${ocr.name}-${dataset.name}/hydra/${now:%Y-%m-%d_%H-%M-%S}

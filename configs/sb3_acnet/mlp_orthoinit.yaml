@@ -1,0 +1,18 @@
+defaults:
+  - _base
+  - _self_
+
+name: 'MLPOrthoInit'
+
+ortho_init: True
+
+# mlp stractor
+shared_net:
+    dims: [64,64]
+    acts: ['relu','relu']
+policy_net:
+    dims: [64]
+    acts: ['tanh']
+value_net:
+    dims: [64]
+    acts: ['tanh']

@@ -1,0 +1,11 @@
+defaults:
+    - _synthetic_env_base
+    - _self_
+name: PushN3C4S1S1Env
+env: PushEnv
+distance_to_wall: 0.15
+num_objects_range: [3,3]
+target: ['blue', 'square', 0.15]
+COLORS: ['blue', 'green', 'brown', 'pink']
+SHAPES: ['square']
+SCALES: [0.15]

@@ -1,0 +1,11 @@
+defaults:
+    - _synthetic_env_base
+    - _self_
+name: MazeN0C4S4S2Env
+env: MazeEnv
+num_objects_range: [0,0]
+occlusion: True
+agent_pos: null
+COLORS: ['blue', 'green', 'yellow', 'red']
+SHAPES: ['square', 'triangle', 'star_4', 'circle']
+SCALES: [0.15, 0.22]

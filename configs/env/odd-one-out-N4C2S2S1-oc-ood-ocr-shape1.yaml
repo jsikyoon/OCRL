@@ -1,0 +1,9 @@
+defaults:
+    - _synthetic_env_base
+    - _self_
+env: OddOneOutEnv
+name: OddOneOutN4C2S2S1Env
+obj_comp: True
+COLORS: ['blue', 'green']
+SHAPES: ['star_5', 'triangle']
+SCALES: [0.15]

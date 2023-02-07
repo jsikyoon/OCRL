@@ -1,0 +1,20 @@
+name: 'Iodine'
+slot_size: 64
+num_iterations: 5
+num_slots: 6
+img_channels: 3
+sigma: 0.35
+beta: 1.0
+layer_norm: True
+ref_cnn_hidden_size: 64
+ref_mlp_hidden_size: 256
+ref_cnn_layers: 4
+ref_cnn_kernel_size: 3
+ref_cnn_stride_size: 2
+dec_cnn_hidden_size: 64
+dec_cnn_layers: 4
+dec_cnn_kernel_size: 3
+learning:
+    lr: 3e-4
+    clip: 5.0
+    clip_norm_type: 2.0

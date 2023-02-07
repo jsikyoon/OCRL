@@ -1,0 +1,10 @@
+defaults:
+    - _base
+    - _self_
+
+name: 'RN'
+g_dims: [256, 256, 256, 256]
+f_dims: [256, 128 , 64, 64]
+rep_dim: 64
+learning:
+    lr: 1e-4

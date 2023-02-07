@@ -1,0 +1,9 @@
+defaults:
+    - _synthetic_env_base
+    - _self_
+env: OddOneOutEnv
+name: OddOneOutN6C2S2S1UnseenEnv
+num_objects_range: [6,6]
+COLORS: ['cyan', 'pink']
+SHAPES: ['star_5', 'spoke_4']
+SCALES: [0.15]

@@ -1,0 +1,14 @@
+defaults:
+    - _synthetic_env_base
+    - _self_
+name: RandomObjsN1-9C4S4S2Env
+env: RandomObjsEnv
+distance_to_agent: 3e-2
+distance_to_objs: 3e-2
+distance_to_wall: 3e-2
+num_objects_range: [1,9]
+wo_agent: True
+occlusion: True
+COLORS: ['blue', 'green', 'yellow', 'red']
+SHAPES: ['square', 'triangle', 'star_4', 'circle']
+SCALES: [0.15, 0.22]

@@ -1,0 +1,5 @@
+defaults:
+    - _base
+    - _self_
+
+project: ocrl-classification

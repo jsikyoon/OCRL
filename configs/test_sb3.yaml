@@ -1,0 +1,26 @@
+defaults:
+  - _base
+  - _self_
+  - ocr: ???
+  - pooling: ???
+  - sb3: ???
+  - sb3_acnet: ???
+  - env: ???
+  - wandb: test_sb3
+
+viz_interval: 100
+n_eval_episodes: 100
+
+video:
+  interval: 100
+  length: 100
+
+agent_checkpoint:
+  entity: ''
+  project: ''
+  run_id: ''
+  file: 'models/best_model.zip'
+
+hydra:
+  run:
+    dir: ./outputs/test_sb3/${agent_checkpoint.run_id}-${env.name}/hydra/${now:%Y-%m-%d_%H-%M-%S}

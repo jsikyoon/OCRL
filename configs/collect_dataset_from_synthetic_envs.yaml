@@ -1,0 +1,16 @@
+defaults:
+    - _self_
+    - env: ???
+    - wandb: collect_dataset_from_synthetic_envs
+
+collection:
+    num_tr: 1000000
+    num_val: 10000
+    num_proc: 10
+    only_initial: True
+    seed: 0
+    chunk_size: 100000
+
+hydra:
+  run:
+    dir: ./outputs/dataset_collection/${env.name}/hydra/${now:%Y-%m-%d_%H-%M-%S}

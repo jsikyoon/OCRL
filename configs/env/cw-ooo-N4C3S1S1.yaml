@@ -1,0 +1,10 @@
+defaults:
+    - _cw_env_base
+    - _self_
+name: CwOOON4C3S1S1Env
+env: CwTargetEnv
+
+target: []
+COLORS: ['blue', 'green', 'yellow']
+task: "ooo"
+

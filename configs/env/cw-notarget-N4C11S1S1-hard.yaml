@@ -1,0 +1,12 @@
+defaults:
+    - _cw_env_base
+    - _self_
+name: CwTargetN4C4S11S1Env
+env: CwTargetEnv
+
+mode: 'hard'
+target: []
+#COLORS: ['blue', 'green', 'yellow', 'red']
+COLORS: ['blue', 'green', 'yellow', 'red', 'orange', 'purple', 'brown', 'pink', 'gray', 'olive', 'cyan']
+
+

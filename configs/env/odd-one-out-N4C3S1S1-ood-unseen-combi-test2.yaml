@@ -1,0 +1,10 @@
+defaults:
+    - _synthetic_env_base
+    - _self_
+env: OddOneOutEnv
+name: OddOneOutN4C3S1S1Env
+unseen_combi_mode: "test"
+unseen_combi: ['green', 'yellow']
+COLORS: ['blue', 'green', 'yellow']
+SHAPES: ['square']
+SCALES: [0.15]

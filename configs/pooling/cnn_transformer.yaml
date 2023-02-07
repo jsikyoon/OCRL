@@ -1,0 +1,12 @@
+defaults:
+    - _base
+    - _self_
+
+name: 'CNN_Transformer'
+d_model: 128
+rep_dim: 128
+nhead: 8
+num_layers: 1
+pos_emb: 'ape'
+learning:
+    lr: 1e-4

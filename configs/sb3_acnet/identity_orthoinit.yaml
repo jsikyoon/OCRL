@@ -1,0 +1,18 @@
+defaults:
+  - _base
+  - _self_
+
+name: 'IdentityOrthoInit'
+
+ortho_init: True
+
+# mlp stractor
+shared_net:
+    dims: []
+    acts: []
+policy_net:
+    dims: []
+    acts: []
+value_net:
+    dims: []
+    acts: []

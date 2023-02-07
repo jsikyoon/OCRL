@@ -1,0 +1,11 @@
+defaults:
+    - _synthetic_env_base
+    - _self_
+name: RandomObjsN5C4S4S2Env
+env: RandomObjsEnv
+num_objects_range: [5,5]
+wo_agent: True
+occlusion: True
+COLORS: ['blue', 'green', 'yellow', 'red']
+SHAPES: ['square', 'triangle', 'star_4', 'circle']
+SCALES: [0.15]

@@ -1,0 +1,12 @@
+num_objects_range: [4,4]
+target: ['blue']
+COLORS: ['blue', 'green', 'yellow', 'red']
+mode: "easy"
+rew_type: 'sparse'
+state_size: 40
+render_mode: "image"
+tags: ""
+num_stacked_obss: 1
+obs_size: 64
+obs_channels: 3
+task: "target"

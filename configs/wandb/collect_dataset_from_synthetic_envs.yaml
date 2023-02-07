@@ -1,0 +1,6 @@
+defaults:
+    - _base
+    - _self_
+
+project: ocrl-dataset
+offline: True

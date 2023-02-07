@@ -1,0 +1,24 @@
+defaults:
+  - _base
+  - _self_
+  - ocr: ???
+  - dataset: ???
+  - wandb: train_property_predictor
+
+ocr_checkpoint:
+  entity: ''
+  project: ''
+  run_id: ''
+  file: ''
+  local_file: ''
+
+property_predictor:
+  matching_mode: 'loss'
+  model_type: 'mlp3'
+  num_slots_for_dist_rep: 6
+  learning:
+    lr: 0.0001
+
+hydra:
+  run:
+    dir: ./outputs/train_property_predictor/${ocr.name}-${dataset.name}/hydra/${now:%Y-%m-%d_%H-%M-%S}

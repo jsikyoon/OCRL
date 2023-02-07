@@ -1,0 +1,18 @@
+defaults:
+    - _base
+    - _self_
+num_objects_range: [4,4]
+num_labels: 4
+state_size: 5
+obs_size: 64
+obs_channels: 3
+property_order_in_state: ['color', 'shape', 'scale', 'xy']
+properties:
+    color:
+        num_candidates: 7
+    shape:
+        num_candidates: 4
+    scale:
+        num_candidates: 2
+    xy:
+        dims: 2
