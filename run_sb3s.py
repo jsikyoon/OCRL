@@ -20,10 +20,10 @@ for m_name in models:
         raise ValueError(f"model {m_name} is not predefined. Please use in {confs['ocrs'].keys()}.")
 
 envs = [
-        "targetN4-hard-sparse",
-        "pushN3-hard-sparse",
-        "oooC2S2S1-hard-sparse-oc",
-        "oooC2S2S1-hard-sparse",
+        "targetN4-hard-sparse", # Object Goal Task
+        "pushN3-hard-sparse", # Object Interaction Task
+        "oooC2S2S1-hard-sparse-oc", # Object Comparison Task
+        "oooC2S2S1-hard-sparse", # Property Comparison Task
 ]
 for e_name in envs:
     if not e_name in confs["envs"].keys():
