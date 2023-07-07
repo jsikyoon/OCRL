@@ -31,7 +31,7 @@ envs = [
 ]
 ...
 ```
-Pretrained SLATE [5] is embodied in this repository, and other pretrained encoders can be downloaded through [this link](https://www.dropbox.com/home/works/research/ocrl/pretrained_encoders).
+Pretrained SLATE [5] is included in this repository, and other pretrained encoders can be downloaded through [this link](https://www.dropbox.com/home/works/research/ocrl/pretrained_encoders).
 
 ## Representation Modules
 We implemented not just OCR algorithms, but also single vector representations, CNN feature map, MAE patch representations, and ground truth wrapper are supported to compare with OCRs.
