@@ -5,7 +5,6 @@ defaults:
   - pooling: ???
   - sb3: ???
   - sb3_acnet: ???
-  - sb3_intrew: wo_intrew
   - env: ???
   - wandb: train_sb3
 
