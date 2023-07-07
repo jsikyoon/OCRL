@@ -1,4 +1,4 @@
-gym
+gym==0.21.0
 spriteworld
 tqdm
 torch
@@ -12,7 +12,7 @@ imageio
 h5py
 coverage
 black
-stable-baselines3
+stable-baselines3==1.5.0
 imageio-ffmpeg
 moviepy
 imageio
