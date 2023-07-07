@@ -7,9 +7,9 @@ Install required packages
 pip install -r requirements.txt
 ```
 
-Because we support multiple options, the number of running hyperparameters is huge. To simply run multiple variations, the detail are written in `for_running.json`, and we will give some examples to run representation module pre-training and agent learning.
+Because we support multiple options, the number of running hyperparameters is huge. To run multiple variations, the details are written in `for_running.json`, and we will give examples to run the representation module pre-training and agent learning.
 
-To pre-train representation modules, you can do like
+To pre-train representation modules, after downloading [the dataset](https://www.dropbox.com/home/works/research/ocrl/datasets), you can do like
 ```
 python train_ocr.py ocr=slate ocr.slotattr.num_slots=6 ocr.slotattr.num_iterations=6 dataset=random-N5C4S4S2 device=cuda:0
 python train_ocr.py ocr=vae ocr.cnn_feat_size=4 ocr.use_cnn_feat=False dataset=random-N5C4S4S2 device=cuda:1 ocr.learning.kld_weight=5 device=cuda:0
@@ -31,6 +31,7 @@ envs = [
 ]
 ...
 ```
+Pretrained SLATE [5] is embodied in this repository, and other pretrained encoders can be downloaded through [this link](https://www.dropbox.com/home/works/research/ocrl/pretrained_encoders).
 
 ## Representation Modules
 We implemented not just OCR algorithms, but also single vector representations, CNN feature map, MAE patch representations, and ground truth wrapper are supported to compare with OCRs.
