@@ -9,10 +9,10 @@ pip install -r requirements.txt
 
 Because we support multiple options, the number of running hyperparameters is huge. To run multiple variations, the details are written in `for_running.json`, and we will give examples to run the representation module pre-training and agent learning.
 
-To pre-train representation modules, after downloading [the dataset](https://www.dropbox.com/sh/hr3hg73ybrraftm/AAAog0bSEJwPOz75_gkbGzbfa?dl=0), you can do like
+To pre-train representation modules, after downloading [the dataset](https://www.dropbox.com/sh/hr3hg73ybrraftm/AAAog0bSEJwPOz75_gkbGzbfa?dl=0) and saving it in `datasets` folder, you can do like
 ```
-python train_ocr.py ocr=slate ocr.slotattr.num_slots=6 ocr.slotattr.num_iterations=6 dataset=random-N5C4S4S2 device=cuda:0
-python train_ocr.py ocr=vae ocr.cnn_feat_size=4 ocr.use_cnn_feat=False dataset=random-N5C4S4S2 device=cuda:1 ocr.learning.kld_weight=5 device=cuda:0
+python train_ocr.py ocr=slate ocr.slotattr.num_slots=6 ocr.slotattr.num_iterations=6 dataset=random-N5C4S4S2 device=cuda:0 tags="slate"
+python train_ocr.py ocr=vae ocr.cnn_feat_size=4 ocr.use_cnn_feat=False dataset=random-N5C4S4S2 device=cuda:1 ocr.learning.kld_weight=5 device=cuda:0 tags="vae"
 ```
 
 To learn agent-learning, you can learn the models by running `python run_sb3s.py` with your configurations written in `for_running.json` such as
@@ -31,7 +31,7 @@ envs = [
 ]
 ...
 ```
-Pretrained SLATE [5] is included in this repository, and other pretrained encoders can be downloaded through [this link](https://www.dropbox.com/sh/hr3hg73ybrraftm/AAAog0bSEJwPOz75_gkbGzbfa?dl=0).
+Pretrained SLATE [5] is included in this repository, `pretrained_encoders` and other pretrained encoders can be downloaded through [this link](https://www.dropbox.com/sh/hr3hg73ybrraftm/AAAog0bSEJwPOz75_gkbGzbfa?dl=0).
 
 ## Representation Modules
 We implemented not just OCR algorithms, but also single vector representations, CNN feature map, MAE patch representations, and ground truth wrapper are supported to compare with OCRs.
