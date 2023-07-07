@@ -50,7 +50,7 @@ def main(config):
         for idx, batch in enumerate(train_dl):
             metrics = model.update(
                     to_device(batch["obss"], config.device),
-                    to_device(batch["masks"].permute(0,1,4,2,3), config.device),
+                    to_device(batch["masks"].permute(0,1,4,2,3), config.device) if "masks" in batch.keys() else None,
                     step
             )
             wandb.log({f"train/{k}": v for k, v in metrics.items()}, step=step)
@@ -62,7 +62,7 @@ def main(config):
                 model, best_val_loss = eval_and_save(model, val_dl, epoch, step, best_val_loss, config)
                 model.train()
         if hasattr(model, "scheduler"):
-            self.scheduler.step()
+            model.scheduler.step()
         epoch += 1
         wandb.log({"epoch": epoch}, step=step)
 
@@ -75,7 +75,7 @@ def eval_and_save(model, val_dl, epoch, step, best_val_loss, config):
         for idx, batch in enumerate(val_dl):
             m = model.get_loss(
                     to_device(batch["obss"], config.device),
-                    to_device(batch["masks"].permute(0,1,4,2,3), config.device),
+                    to_device(batch["masks"].permute(0,1,4,2,3), config.device) if "masks" in batch.keys() else None,
             )
             # This is just for iodine since we can't use no_grad, but prevents us from using too much gpu
             m['loss'] = m['loss'].detach()

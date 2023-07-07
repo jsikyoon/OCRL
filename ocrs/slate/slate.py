@@ -36,7 +36,7 @@ class SLATE(Base):
     def __call__(self, obs: Tensor, with_attns=False, with_masks=False) -> Tensor:
         return self._module(obs, with_attns, with_masks)
 
-    def get_loss(self, obs: Tensor, masks:Tensor, with_rep=False, with_mse=False) -> dict:
+    def get_loss(self, obs: Tensor, masks, with_rep=False, with_mse=False) -> dict:
         if with_rep:
             metrics, slots = self._module.get_loss(obs, masks, with_rep, with_mse)
         else:
@@ -50,7 +50,7 @@ class SLATE(Base):
         )
         return (metrics, slots) if with_rep else metrics
 
-    def update(self, obs: Tensor, masks: Tensor, step: int) -> dict:
+    def update(self, obs: Tensor, masks, step: int) -> dict:
         self._module.update_tau(step)
         # update lr
         lr_warmup_factor = linear_warmup(

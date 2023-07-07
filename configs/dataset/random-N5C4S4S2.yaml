@@ -2,8 +2,11 @@ defaults:
   - _synthetic_env_base
   - _self_
 name: RandomN5C4S4S2
+tags: "random-N5C4S4S2"
+datadir: "datasets/RandomObjsEnv-N5C4S4-AgentPosNo-WoAgentTrue-OcclusionTrue-SkewedFalse-Tr1000000-Val10000.hdf5"
 dataset_checkpoint:
     entity: 'jaesikyoon'
     project: 'ocrl_dataset'
     run_id: '1l3i650t'
     file: 'RandomObjsEnv-N5C4S4-AgentPos0505-WoAgentTrue-OcclusionTrue-SkewedFalse-Tr1000000-Val10000.hdf5'
+

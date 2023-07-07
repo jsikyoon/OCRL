@@ -1,4 +1,4 @@
-batch_size: 32
+batch_size: 24
 num_visualization: 5
 device: 'cpu'
 tags: ""

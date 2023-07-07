@@ -1,5 +1,6 @@
 dataset_dir: datasets
 tags: ""
+datadir: null
 dataset_checkpoint:
     entity: ''
     project: ''

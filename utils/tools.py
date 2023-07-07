@@ -153,8 +153,9 @@ def preprocessing_obs(obs, device, type="image"):
 
 # To get data from files
 def get_dataloaders(config, batch_size, num_workers, replace=False):
-    if hasattr(config, "datadir"):
-        datafile = config.datadir
+    if config.datadir:
+        parent_dir = Path(__file__).resolve().parents[1]
+        datafile = parent_dir / config.datadir
     else:
         parent_dir = Path(__file__).resolve().parents[1]
         (parent_dir / config.dataset_dir).mkdir(parents=True, exist_ok=True)

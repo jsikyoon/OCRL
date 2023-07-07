@@ -57,7 +57,7 @@ class Base:
     def get_samples(self, obs: Tensor) -> dict:
         return self._module.get_samples(obs)
 
-    def update(self, obs: Tensor, masks: Tensor, step: int) -> dict:
+    def update(self, obs: Tensor, masks, step: int) -> dict:
         if hasattr(self, "_opt"):
             self._opt.zero_grad()
             metrics = self.get_loss(obs, masks)
