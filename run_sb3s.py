@@ -14,6 +14,7 @@ with open("for_running.json", "r") as f:
 models = [
         "e2e cnn 0.01ent_coef",
         "slate-transformer-0.01ent_coef",
+        #"cw-slate-transformer",
 ]
 for m_name in models:
     if not m_name in confs["ocrs"].keys():
@@ -24,6 +25,7 @@ envs = [
         "pushN3-hard-sparse", # Object Interaction Task
         "oooC2S2S1-hard-sparse-oc", # Object Comparison Task
         "oooC2S2S1-hard-sparse", # Property Comparison Task
+        #"cw-target-N4C4S1S1-hard", # Object Reach Task
 ]
 for e_name in envs:
     if not e_name in confs["envs"].keys():

@@ -89,7 +89,21 @@
             "sb3_acnet": "mlp",
             "pooling.ocr_checkpoint.local_file": "pretrained_encoders/slate.pth",
             "tags": "\\'toplot,slate,ocr,tfdec,pooling-transformer,cnn_hsize64,slotsize192,mlpsize192,slotiter3,0.01ent_coef\\'"
+        },
+
+        "cw-slate-transformer":{
+            "ocr": "slate",
+            "ocr.slotattr.num_slots": "10",
+            "pooling": "transformer",
+            "sb3": "ppo",
+            "sb3.algo_kwargs.ent_coef": "0.0",
+            "sb3.algo_kwargs.learning_rate": "5e-5",
+            "sb3.algo_kwargs.clip_range": "0.1",
+            "sb3_acnet": "mlp",
+            "pooling.ocr_checkpoint.local_file": "pretrained_encoders/slate_3d.pth",
+            "tags": "\\'toplot,slate,ocr,tfdec,pooling-transformer,cnn_hsize64,slotsize192,mlpsize192,slotiter3,0.0ent_coef\\'"
         }
+
     },
     "envs":{
         "targetN4-hard-sparse":{
@@ -115,6 +129,12 @@
             "env.mode": "hard",
             "env.rew_type": "sparse",
             "env.tags": "\\'oddoneoutN4C2S2S1,hardmode,sparserewtype\\'"
+        },
+        "cw-target-N4C4S1S1-hard": {
+            "env": "cw-target-N4C4S1S1",
+            "env.mode": "hard",
+            "env.rew_type": "sparse",
+            "env.tags": "\\'cwtargetN4C3S1S1,hardmode,sparserewtype\\'"
         }
     }
 }
