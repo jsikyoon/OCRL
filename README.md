@@ -9,7 +9,7 @@ pip install -r requirements.txt
 
 Because we support multiple options, the number of running hyperparameters is huge. To run multiple variations, the details are written in `for_running.json`, and we will give examples to run the representation module pre-training and agent learning.
 
-To pre-train representation modules, after downloading [the dataset](https://www.dropbox.com/sh/hr3hg73ybrraftm/AAAog0bSEJwPOz75_gkbGzbfa?dl=0) and saving it in `datasets` folder, you can do like
+To pre-train representation modules, after downloading [the dataset](https://www.dropbox.com/scl/fo/7e7iluev754rk2cpw7bmq/h?rlkey=3wmse4davpy147wwta5mgjoyb&dl=0) and saving it in `datasets` folder, you can do like
 ```
 python train_ocr.py ocr=slate ocr.slotattr.num_slots=6 ocr.slotattr.num_iterations=3 dataset=random-N5C4S4S2 device=cuda:0 tags="slate"
 python train_ocr.py ocr=vae ocr.cnn_feat_size=4 ocr.use_cnn_feat=False dataset=random-N5C4S4S2 device=cuda:1 ocr.learning.kld_weight=5 device=cuda:0 tags="vae"
