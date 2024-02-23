@@ -11,4 +11,4 @@ load:
     resume_run_path: null
     resume_checkpoint: null
 
-max_epochs: 1000
+max_epochs: 10
